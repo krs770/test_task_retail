@@ -1,0 +1,23 @@
+spring:
+  mvc:
+    path-match:
+      matching-strategy: ant_path_matcher
+  datasource:
+    url: jdbc:postgresql://localhost:5432/retail
+    username: postgres
+    password: postgres
+  liquibase:
+    enabled: true
+    change-log: classpath:db.scripts/changelog-master.xml
+    url: jdbc:postgresql://localhost:5432/retail
+    user: postgres
+    password: postgres
+    liquibase-schema: "liquibase"
+    default-schema: "retail"
+
+
+
+
+
+
+
